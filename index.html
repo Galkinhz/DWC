@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web calculator</title>
+   
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="Display.js" type="text/javascript"></script>
+    <script src="Calculadora.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript" defer></script>
+    
+   
+</head>
+<body>
+
+    <header>
+        <div class="container header-items">
+            <h1>Digital Web <span>Calculator</span> </h1>
+            <img src="imagenes/man-and-computer.svg" alt="man-with-calculator">
+        </div> 
+    </header>
+
+    <main>
+
+        <section class="container info-about-DWC">
+            <h2 class="titulo center"> ¿Qué es DWC? </h2>
+            <img src="imagenes/programming.svg" alt="man-with-calculator">
+            <p class="parrafo center">Digital Web Calculator (DWC), es un proyecto personal en el que expongo una calculadora digital creada con HTML, CSS y Javascript</p>
+        </section>
+
+        <section class="background-about-me">
+            <div class="container info-about-me">
+                <img src="imagenes/about-me.svg" alt="team">
+                <div class="textos-about-me">
+                    <h2 class="titulo"> Sobre Mi </h2>
+                    <p class="parrafo"> Soy un web designer autodidacta en busqueda continua de mi crecimiento personal y profesional, 
+                        a través de heyo he desarrolado páginas web como ArtStudio y, en ésta ocasión traigo Digital Web Calculator </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container container-title-calculator">
+            <h2 class="titulo center"> Calculadora </h2>
+        </section>
+
+
+        <section class="container background-calculator">
+            <div class="calculadora">
+                <div class="display">
+                    <div id="valor-anterior"></div>
+                    <div id="valor-actual"></div>
+                </div>
+                <button onclick="display.borrarTodo()" class="col-2">AC</button>
+                <button onclick="display.borrar()"><i class='bx bx-left-arrow-alt'></i></button>
+                <button class="operador bg-numeros" value="dividir">%</button>
+                <button class="numero">7</button>
+                <button class="numero">8</button>
+                <button class="numero">9</button>
+                <button class="operador bg-numeros" value="multiplicar">x</button>
+                <button class="numero">4</button>
+                <button class="numero">5</button>
+                <button class="numero">6</button>
+                <button class="operador bg-numeros" value="restar">-</button>
+                <button class="numero">1</button>
+                <button class="numero">2</button>
+                <button class="numero">3</button>
+                <button class="operador bg-numeros" value="sumar">+</button>
+                <button class="col-2 numero">0</button>
+                <button class="numero bg-numeros">.</button>
+                <button class="operador bg-numeros" value="igual">=</button>
+            </div>
+        </section>
+
+
+    </main>
+</body>
+</html>
